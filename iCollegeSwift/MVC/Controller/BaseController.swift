@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BaseController.swift
 //  iCollegeSwift
 //
 //  Created by Kunal Gupta on 16/06/16.
@@ -8,18 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func showAlert(message:String){
+        let alert = UIAlertView()
+        alert.addButtonWithTitle("OK")
+        alert.message = message
+        alert .show()
+    }
 }
-
