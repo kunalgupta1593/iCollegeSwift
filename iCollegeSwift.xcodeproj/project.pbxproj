@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1E28C61D3D52080060AA11 /* TaxiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E28C51D3D52080060AA11 /* TaxiTableViewCell.swift */; };
+		6E1E28C81D3D53430060AA11 /* TransportationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E28C71D3D53430060AA11 /* TransportationModel.swift */; };
 		6E278BCF1D3C0BBA00AB4DA0 /* TaxiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E278BCE1D3C0BBA00AB4DA0 /* TaxiVC.swift */; };
 		6E278BD11D3C0BC800AB4DA0 /* BusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E278BD01D3C0BC800AB4DA0 /* BusVC.swift */; };
 		6E278BD31D3C0BD900AB4DA0 /* TransportationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E278BD21D3C0BD900AB4DA0 /* TransportationVC.swift */; };
@@ -39,6 +41,8 @@
 		1D5C608B682D2A8BF326CA67 /* Pods-iCollegeSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCollegeSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iCollegeSwift/Pods-iCollegeSwift.release.xcconfig"; sourceTree = "<group>"; };
 		3B5A56CE9D60A7B3B8CC0BCA /* Pods-iCollegeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCollegeSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCollegeSwift/Pods-iCollegeSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		52EA13C9B0B08A8F097856AE /* Pods_iCollegeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCollegeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1E28C51D3D52080060AA11 /* TaxiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiTableViewCell.swift; sourceTree = "<group>"; };
+		6E1E28C71D3D53430060AA11 /* TransportationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportationModel.swift; sourceTree = "<group>"; };
 		6E278BCE1D3C0BBA00AB4DA0 /* TaxiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiVC.swift; sourceTree = "<group>"; };
 		6E278BD01D3C0BC800AB4DA0 /* BusVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusVC.swift; sourceTree = "<group>"; };
 		6E278BD21D3C0BD900AB4DA0 /* TransportationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportationVC.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A76BB01D1D060A0028082F /* CollegeListModel.swift */,
+				6E1E28C71D3D53430060AA11 /* TransportationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A76BAE1D1D03500028082F /* CollegeTableViewCell.swift */,
+				6E1E28C51D3D52080060AA11 /* TaxiTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -433,10 +439,12 @@
 				A1A76BB11D1D060A0028082F /* CollegeListModel.swift in Sources */,
 				6E278BD11D3C0BC800AB4DA0 /* BusVC.swift in Sources */,
 				A1AB210C1D13D7F0000EFB23 /* AlertView.swift in Sources */,
+				6E1E28C61D3D52080060AA11 /* TaxiTableViewCell.swift in Sources */,
 				A1AB210A1D13D554000EFB23 /* AppLoader.swift in Sources */,
 				6E96623A1D12F612006F6814 /* AppDelegate.swift in Sources */,
 				A1C7A14A1D1BFA6E00962663 /* CollegeListVC.swift in Sources */,
 				6E278BCF1D3C0BBA00AB4DA0 /* TaxiVC.swift in Sources */,
+				6E1E28C81D3D53430060AA11 /* TransportationModel.swift in Sources */,
 				6E9662751D12FF42006F6814 /* BaseController.swift in Sources */,
 				6E9662731D12FDC7006F6814 /* LoginVC.swift in Sources */,
 				6E278BD31D3C0BD900AB4DA0 /* TransportationVC.swift in Sources */,

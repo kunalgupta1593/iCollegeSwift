@@ -23,9 +23,7 @@ class HomeVC: UIViewController {
     // MARK: ACTION BUTTON
     
     @IBAction func actionBtnMenu(sender: AnyObject) {
-        let vc: SSASideMenu!
-        vc = UIApplication.sharedApplication().keyWindow?.rootViewController as! SSASideMenu
-        vc.presentLeftMenuViewController()
+            sideMenuViewController?._presentLeftMenuViewController()
     }
 
 }

@@ -20,7 +20,7 @@ class LoginVC: BaseController,UIAlertViewDelegate,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
-        checkIfLoggedIn()
+//        checkIfLoggedIn()
         // Do any additional setup after loading the view.
     }
     
@@ -38,9 +38,14 @@ class LoginVC: BaseController,UIAlertViewDelegate,UITextFieldDelegate {
     }
     
     func checkIfLoggedIn(){
+        
+        print(Constant.USER_DICT)
+        
         if Constant.USER_DICT?.valueForKey("token")?.length != 0{
-            let nav = UINavigationController(rootViewController: (storyboard?.instantiateViewControllerWithIdentifier("HomeVC"))!)
-            nav.navigationBarHidden = true
+            
+            let nav = UINavigationController(rootViewController: (storyboard?.instantiateViewControllerWithIdentifier("HomeVC") ?? HomeVC () ) ?? UINavigationController() )
+            
+                nav.navigationBarHidden = true
             
             let sideMenu = SSASideMenu(contentViewController: nav, leftMenuViewController: (storyboard?.instantiateViewControllerWithIdentifier("SideViewController"))!)
             sideMenu.configure(SSASideMenu.MenuViewEffect(fade: true, scale: true, scaleBackground: false))
@@ -132,8 +137,8 @@ class LoginVC: BaseController,UIAlertViewDelegate,UITextFieldDelegate {
                                 
                                 NSUserDefaults.standardUserDefaults().setObject(dict["data"], forKey:Constant.iCollegeSwift)
 
-                                let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("CollegeListVC") as? CollegeListVC
-                                self.navigationController!.pushViewController(secondViewController!, animated: true)
+                                let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("CollegeListVC") ?? CollegeListVC()
+                                self.navigationController!.pushViewController(secondViewController, animated: true)
 
                             }
                             }, failure: { (error) in
